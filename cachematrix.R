@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
     m <<- NULL
   }
   get <- function() x
-  setinverse <- function(inverse) m <<- inverse ## What goes on Here??
+  setinverse <- function(inverse) m <<- inverse ## looks for the variable inverse stored in all parent environments
   getinverse <- function() m
   list(set = set, get = get,
        setinverse = setinverse,
